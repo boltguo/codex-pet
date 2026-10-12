@@ -16,7 +16,7 @@
 | ![Anya 动画预览](preview/anya.gif) | ![Miku 动画预览](preview/miku.gif) |
 
 ```text
-anya-codex-pet/
+codex-pet/
 ├── anya/
 │   ├── pet.json
 │   └── spritesheet.webp
@@ -35,8 +35,8 @@ anya-codex-pet/
 下载仓库 ZIP 并解压，或运行：
 
 ```bash
-git clone https://github.com/boltguo/anya-codex-pet.git
-cd anya-codex-pet
+git clone https://github.com/boltguo/codex-pet.git
+cd codex-pet
 ```
 
 在仓库根目录运行以下命令，同时安装两个角色。已有同名包会更新为本仓库中的版本。
