@@ -6,10 +6,10 @@
 
 ## 宠物包
 
-| 角色 | 安装包目录 | 动画预览 | 完整精灵图预览 |
-| --- | --- | --- | --- |
-| Anya | [`anya/`](anya/) | [播放预览](preview/anya.gif) | [全部 73 帧](preview/anya-contact-sheet.png) |
-| Miku | [`miku/`](miku/) | [播放预览](preview/miku.gif) · [16 个注视方向](preview/miku-look.gif) | [全部 73 帧](preview/miku-contact-sheet.png) |
+| 角色 | 安装包目录 | 动画预览 |
+| --- | --- | --- |
+| Anya | [`anya/`](anya/) | [播放预览](preview/anya.gif) |
+| Miku | [`miku/`](miku/) | [播放预览](preview/miku.gif) |
 
 | Anya | Miku |
 | :---: | :---: |
@@ -23,10 +23,9 @@ anya-codex-pet/
 ├── miku/
 │   ├── pet.json
 │   └── spritesheet.webp
-├── preview/
-└── qa/
-    ├── anya-validation.json
-    └── miku-validation.json
+└── preview/
+    ├── anya.gif
+    └── miku.gif
 ```
 
 `anya/` 和 `miku/` 都是独立的完整安装包，保留目录中的两个文件即可使用。Miku 的 WebP 由已校验的最终 PNG 无损转换，解码后的 RGBA 像素完全一致。
@@ -51,16 +50,6 @@ cp miku/pet.json miku/spritesheet.webp ~/.codex/pets/miku/
 如果只需要一个角色，仅执行对应的 `mkdir` 和 `cp` 命令。使用自定义 `CODEX_HOME` 时，将 `~/.codex` 替换为该目录。
 
 安装后重新打开 Codex 宠物选择器，选择 **Anya** 或 **Miku**；列表未刷新时重启 Codex。
-
-## 校验
-
-两份最终 WebP 均按 v2 图集契约重新校验，结果见 [`qa/`](qa/)：
-
-- `pet.json` 的 `spriteVersionNumber` 为 `2`，图片路径指向同目录的 `spritesheet.webp`。
-- 图集为 `8 × 11` 格，每格 `192 × 208` 像素。
-- 73 个必需帧均非空，15 个未使用格完全透明。
-- 编码、尺寸、透明度和色键残留检查通过。
-- 报告记录最终图片的 SHA-256，便于核对下载的文件。
 
 ## Disclaimer
 
