@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Anya | [`anya/`](anya/) | [播放预览](preview/anya.gif) |
 | Miku | [`miku/`](miku/) | [播放预览](preview/miku.gif) |
-| Makima | [`makima/`](makima/) | [GIF 预览](preview/makima.gif) · [MP4 预览](preview/makima.mp4) |
+| Makima | [`makima/`](makima/) | [播放预览](preview/makima.gif) |
 
 | Anya | Miku | Makima |
 | :---: | :---: | :---: |
@@ -28,8 +28,7 @@ codex-pet/
 └── preview/
     ├── anya.gif
     ├── miku.gif
-    ├── makima.gif
-    └── makima.mp4
+    └── makima.gif
 ```
 
 `anya/`、`miku/` 和 `makima/` 可以分别安装，保留对应目录中的两个文件即可。
