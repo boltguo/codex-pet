@@ -1,6 +1,6 @@
-# Anya, Miku & Makima Codex Pets
+# Anya, Miku, Makima & Reze Codex Pets
 
-非官方同人桌面宠物包：Anya Forger、Q 版初音未来 Miku 与 Q 版《电锯人》玛奇玛 Makima，可安装到 Codex 的本地宠物目录。
+非官方同人桌面宠物包：Anya Forger、初音未来 Miku，以及《电锯人》的 Makima 与 Reze，均为 Q 版造型，可安装到 Codex 的本地宠物目录。
 
 ## 宠物包
 
@@ -9,10 +9,11 @@
 | Anya | [`anya/`](anya/) | [播放预览](preview/anya.gif) |
 | Miku | [`miku/`](miku/) | [播放预览](preview/miku.gif) |
 | Makima | [`makima/`](makima/) | [播放预览](preview/makima.gif) |
+| Reze | [`reze/`](reze/) | [播放预览](preview/reze.gif) |
 
-| Anya | Miku | Makima |
-| :---: | :---: | :---: |
-| ![Anya 动画预览](preview/anya.gif) | ![Miku 动画预览](preview/miku.gif) | ![Makima 动画预览](preview/makima.gif) |
+| Anya | Miku | Makima | Reze |
+| :---: | :---: | :---: | :---: |
+| ![Anya 动画预览](preview/anya.gif) | ![Miku 动画预览](preview/miku.gif) | ![Makima 动画预览](preview/makima.gif) | ![Reze 动画预览](preview/reze.gif) |
 
 ```text
 codex-pet/
@@ -25,13 +26,17 @@ codex-pet/
 ├── makima/
 │   ├── pet.json
 │   └── spritesheet.webp
+├── reze/
+│   ├── pet.json
+│   └── spritesheet.webp
 └── preview/
     ├── anya.gif
     ├── miku.gif
-    └── makima.gif
+    ├── makima.gif
+    └── reze.gif
 ```
 
-`anya/`、`miku/` 和 `makima/` 可以分别安装，保留对应目录中的两个文件即可。
+`anya/`、`miku/`、`makima/` 和 `reze/` 可以分别安装，保留对应目录中的两个文件即可。
 
 ## 本地安装
 
@@ -42,20 +47,21 @@ git clone https://github.com/boltguo/codex-pet.git
 cd codex-pet
 ```
 
-在仓库根目录运行以下命令，同时安装三个角色。已有同名包会更新为本仓库中的版本。
+在仓库根目录运行以下命令，同时安装四个角色。已有同名包会更新为本仓库中的版本。
 
 ```bash
-mkdir -p ~/.codex/pets/anya ~/.codex/pets/miku ~/.codex/pets/makima
+mkdir -p ~/.codex/pets/anya ~/.codex/pets/miku ~/.codex/pets/makima ~/.codex/pets/reze
 cp anya/pet.json anya/spritesheet.webp ~/.codex/pets/anya/
 cp miku/pet.json miku/spritesheet.webp ~/.codex/pets/miku/
 cp makima/pet.json makima/spritesheet.webp ~/.codex/pets/makima/
+cp reze/pet.json reze/spritesheet.webp ~/.codex/pets/reze/
 ```
 
 如果只需要一个角色，仅执行对应的 `mkdir` 和 `cp` 命令。使用自定义 `CODEX_HOME` 时，将 `~/.codex` 替换为该目录。
 
-安装后重新打开 Codex 宠物选择器，选择 **Anya**、**Miku** 或 **Makima**；列表未刷新时重启 Codex。
+安装后重新打开 Codex 宠物选择器，选择 **Anya**、**Miku**、**Makima** 或 **Reze**；列表未刷新时重启 Codex。
 
 ## Disclaimer
 
-This is an unofficial fan-made project and is not affiliated with or endorsed by OpenAI, SPY×FAMILY, Crypton Future Media, Chainsaw Man, or any related rights holder. Anya Forger, Hatsune Miku, Makima, and related character rights belong to their respective owners. This repository does not grant a license to the underlying characters or franchises. Review applicable platform rules and rights requirements before public redistribution or commercial use.
+This is an unofficial fan-made project and is not affiliated with or endorsed by OpenAI, SPY×FAMILY, Crypton Future Media, Chainsaw Man, or any related rights holder. Anya Forger, Hatsune Miku, Makima, Reze, and related character rights belong to their respective owners. This repository does not grant a license to the underlying characters or franchises. Review applicable platform rules and rights requirements before public redistribution or commercial use.
 
